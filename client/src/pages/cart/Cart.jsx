@@ -22,7 +22,7 @@ const Cart = () => {
   });
   return (
     <div className="min">
-      <div className=" text-white pt-[40px] pb-[20px] container mx-auto flex w-full gap-[20px]">
+      <div className=" text-white pt-[40px] pb-[20px] container mx-auto flex flex-col md:flex-row w-full gap-[20px]">
         <div className="cart-itmes costume_bg flex flex-col w-full gap-[20px] border-[2px] border-purple-900 rounded-lg p-[20px]">
           {foods.length !== 0 ? (
             foods.map((food) => (
@@ -72,7 +72,7 @@ const Cart = () => {
             </div>
           )}
         </div>
-        <div className="total_count costume_bg border-[2px] border-purple-900 p-[20px] rounded-lg w-[450px] h-full">
+        <div className="total_count costume_bg border-[2px] border-purple-900 p-[20px] rounded-lg md:w-[450px] h-full">
           <h1 className="text-center text-xl font-bold">Votre commande</h1>
           <div className="flex flex-col gap-[10px] mt-[50px] text-lg">
             <h1>commande totale: {totalCount}</h1>
