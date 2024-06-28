@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Menu from "./pages/menu/Menu";
 import Food from "./pages/Food/Food";
 import Cart from "./pages/cart/Cart";
+import Payment from "./pages/payment/Payment";
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
       <Route path="/menu/tags/:tag" element={<Menu />} />
       <Route path="/food/:id" element={<Food />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/checkout" element={<Payment />} />
     </Routes>
   );
 };

@@ -72,17 +72,20 @@ const Cart = () => {
             </div>
           )}
         </div>
-        <div className="total_count costume_bg border-[2px] border-purple-900 p-[20px] rounded-lg md:w-[450px] h-full">
+        <div className="total_count w-full costume_bg border-[2px] border-purple-900 p-[20px] rounded-lg md:w-[450px] h-full">
           <h1 className="text-center text-xl font-bold">Votre commande</h1>
-          <div className="flex flex-col gap-[10px] mt-[50px] text-lg">
+          <div className="flex flex-col gap-[10px] mt-[50px] text-lg mb-[50px]">
             <h1>commande totale: {totalCount}</h1>
             <h1 className="flex items-center gap-[10px]">
               prix total: <Price price={totalPrice} />
             </h1>
           </div>
-          <div className="mt-[50px] text-center text-lg p-[10px] font-bold bg-yellow-500 text-black rounded-lg cursor-pointer">
-            Achat
-          </div>
+          <Link
+            to="/checkout"
+            className="text-center w-full text-lg p-[10px] font-bold bg-yellow-500 text-black rounded-lg cursor-pointer"
+          >
+            Vérifier
+          </Link>
         </div>
       </div>
     </div>
